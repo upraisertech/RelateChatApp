@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  line-height: normal;
+  font-family: satoshi;
+  /* outline: 1px solid red; */
+}
+body {
+  font-family: satoshi;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: satoshi;
+  src: url(/src/styles/Satoshi-Variable.ttf);
+}
+
+/* scroll */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0073ff;
+  border-radius: 10px;
+}
+ 
+
+/* -----------------------------------LOGIN ------------------------------------------------- */
+@media (min-width: 500px) {
+.secondside {
+  margin-left: -110px;
+  border-left: 1px solid rgb(221, 221, 221);
+}
+}
+@media (max-width: 499px) {
+  .secondside {
+    margin-left: 4px;
+    border-left: 0px solid rgb(221, 221, 221);
+  }
+}

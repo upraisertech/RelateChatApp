@@ -1,0 +1,5 @@
+
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/MontserratRomanSemiBold.ttf"); font-family : "Montserrat"; font-weight : 600;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/MontserratRomanRegular.ttf"); font-family : "Montserrat"; font-weight : 400;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/MontserratRomanMedium.ttf"); font-family : "Montserrat"; font-weight : 500;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/MontserratRomanBold.ttf"); font-family : "Montserrat"; font-weight : 700;  }
