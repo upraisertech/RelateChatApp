@@ -4,7 +4,7 @@ export const links = [
       id: 1,
       title: "Chat",
       icon: "img_videocamera",
-      url: "/",
+      url: "/chat",
     },
     {
       id: 2,

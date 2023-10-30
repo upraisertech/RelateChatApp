@@ -8,15 +8,12 @@ const SidebarPage = () => {
   const [open, setOpen] = useState(true);
 
   return (
-    <Sidebar className="!w-[150px] fixed bg-blue-300 flex h-screen inset-y-[0] justify-start left-[0] my-auto overflow-auto top-[0]">
-      <Link to="/" className="p-2">
-        <div className="border-b border-solid border-white-A700 flex flex-col items-center justify-end p-[10px] sm:px-5 w-full">
-          <Text
-            className="mt-2.5 text-2xl md:text-[22px] text-center text-gray-50 sm:text-xl"
-            size="txtMontserratRomanBold24"
-          >
-            RELATE
-          </Text>
+    <div className="!w-[150px] fixed bg-blue-300 h-full inset-y-[0] justify-start my-auto z-50 overflow-hidden">
+      <Link to="/" className="border-b border-solid border-white-A700 flex flex-col items-center justify-end p-[10px] sm:px-5 w-full">
+        <div
+          className="mt-2.5 text-2xl md:text-[22px] text-center text-gray-50 sm:text-xl font-bold"
+        >
+          RELATE
         </div>
       </Link>
       <div className="align-center items-center justify-center rounded-[10px] shadow-bs2">
@@ -37,7 +34,7 @@ const SidebarPage = () => {
           ))}
         </ul>
       </div>
-    </Sidebar>
+    </div>
   );
 };
 

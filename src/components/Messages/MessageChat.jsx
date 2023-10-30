@@ -5,9 +5,11 @@ import SendMessage from "./SendMessage";
 
 const MessageChats = () => {
   return (
-    <div className="flex-col w-full">
+    <div className="flex-col bg-[#F8E9DB] h-screen w-full">
       <ChatBox />
-      <SendMessage />
+      <div className="flex w-full">
+        <SendMessage />
+      </div>
     </div>
   );
 };

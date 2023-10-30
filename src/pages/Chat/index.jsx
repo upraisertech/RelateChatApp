@@ -1,6 +1,7 @@
 import React from "react";
 import SidebarPage from "../../components/SideNav/sidenav";
 import Navbar from "../../components/NavBar/navbar";
+import Message from "../../components/Messages/index";
 
 const ChatPage = () => {
   return (
@@ -8,7 +9,10 @@ const ChatPage = () => {
       <div>
         <SidebarPage />
       </div>
-      <Navbar pageName="Chat" />
+      <div className="flex flex-col ml-[9.401em]">
+        <Navbar pageName="Chat" />
+        <Message />
+      </div>
     </div>
   );
 };

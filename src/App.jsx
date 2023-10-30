@@ -7,24 +7,35 @@ import Groups from "./pages/Groups";
 import ChatPage from "./pages/Chat/index";
 import NotFound from "./pages/NotFound";
 import { PrivateRoute } from "./routes/PrivateRoute";
+import ScrollToTop from "./components/commom/ScrollToTop";
 
 function App() {
   return (
-    <AuthProvider>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route
-          path="/chat"
-          element={
-            <PrivateRoute>
-              <ChatPage />
-            </PrivateRoute>
-          }
-        />
-        <Route path="/group" element={<Groups />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </AuthProvider>
+    <>
+      <ScrollToTop />
+      <AuthProvider>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route
+            path="/chat"
+            element={
+              <PrivateRoute>
+                <ChatPage />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/group"
+            element={
+              <PrivateRoute>
+                <Groups />
+              </PrivateRoute>
+            }
+          />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </AuthProvider>
+    </>
   );
 }
 

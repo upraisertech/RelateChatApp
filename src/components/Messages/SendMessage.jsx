@@ -31,7 +31,7 @@ const SendMessage = () => {
   }
 
   return (
-    <div className="w-full py-10 shadow-lg">
+    <div className="w-full py-10">
       <form onSubmit={handleSendMessage} className="px-2 containerWrap flex">
         <input value={value} onChange={e => setValue(e.target.value)} className="input w-full focus:outline-none bg-gray-100 rounded-r-none" type="text" />
         <button type="submit" className="w-auto bg-gray-500 text-white rounded-r-lg px-5 text-sm">Send</button>
