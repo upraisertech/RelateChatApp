@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {allMessage} from "./data";
-import { Button, Img, Input, Text } from "components";
+import { Button, Img, Input, Text } from "../";
 import { CloseSVG } from "../../assets/images";
 
 const AllMessage = () => {

@@ -36,5 +36,6 @@ module.exports = {
       fontFamily: { montserrat: "Montserrat" },
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [require("daisyui")],
 };
+

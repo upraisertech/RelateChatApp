@@ -1,12 +1,30 @@
-import { ProSidebarProvider } from "react-pro-sidebar";
-import React from "react";
-import Routes from "./Routes";
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./components/NavBar/navbar";
+import { AuthProvider } from "./context/AuthContext";
+import ChatRoom from "./pages/ChatRoom";
+import Login from "./pages/Login";
+import Groups from "./pages/Groups";
+import ChatPage from "./pages/Chat/index";
+import NotFound from "./pages/NotFound";
+import { PrivateRoute } from "./routes/PrivateRoute";
 
 function App() {
   return (
-    <ProSidebarProvider>
-      <Routes />
-    </ProSidebarProvider>
+    <AuthProvider>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route
+          path="/chat"
+          element={
+            <PrivateRoute>
+              <ChatPage />
+            </PrivateRoute>
+          }
+        />
+        <Route path="/group" element={<Groups />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </AuthProvider>
   );
 }
 

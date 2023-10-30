@@ -1,8 +1,8 @@
 import React from "react";
-import { Button, Img, Input, List, Text } from "components";
-import Message from "components/Messages/index";
+import { Button, Img, Input, List, Text } from "../";
+import Message from "../Messages/index";
 
-const NavBarPage = ({pageName}) => {
+const NavBarPage = ({ pageName }) => {
   const [group153value, setGroup153value] = React.useState("");
 
   return (
@@ -15,7 +15,7 @@ const NavBarPage = ({pageName}) => {
           >
             {pageName}
           </Text>
-          
+
           <div className="flex items-center justify-center mt-[24px] w-full">
             <div className="flex flex-row gap-4 items-end justify-start">
               <Img
